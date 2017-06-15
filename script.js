@@ -1,14 +1,14 @@
-const sex = document.querySelector("#sex");
-const age = document.querySelector("#age");
-const face = document.querySelector("#face");
-const button = document.querySelector("button");
-const answer = document.querySelector("#result");
+var sex = document.querySelector("#sex");
+var age = document.querySelector("#age");
+var face = document.querySelector("#face");
+var button = document.querySelector("button");
+var answer = document.querySelector("#result");
 
 
 button.addEventListener("click", function() {
-    let add;
-    let result;
-    if (sex.value === "Male") {
+    var add;
+    var result;
+    if (sex.value === "Male") {        
         switch (parseInt(age.value)) {
             case 50:
                 add = 59.86 * face.value;
